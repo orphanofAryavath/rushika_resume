@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rushika_resume/static/css/main.e6c13ad2.css",
-    "main.js": "/rushika_resume/static/js/main.f0dd6abc.js",
+    "main.js": "/rushika_resume/static/js/main.c2f2ad07.js",
     "static/js/453.95376e7a.chunk.js": "/rushika_resume/static/js/453.95376e7a.chunk.js",
     "index.html": "/rushika_resume/index.html",
     "main.e6c13ad2.css.map": "/rushika_resume/static/css/main.e6c13ad2.css.map",
-    "main.f0dd6abc.js.map": "/rushika_resume/static/js/main.f0dd6abc.js.map",
+    "main.c2f2ad07.js.map": "/rushika_resume/static/js/main.c2f2ad07.js.map",
     "453.95376e7a.chunk.js.map": "/rushika_resume/static/js/453.95376e7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f0dd6abc.js"
+    "static/js/main.c2f2ad07.js"
   ]
 }
