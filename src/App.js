@@ -9,18 +9,6 @@ import {
   Button,
 } from "@mui/material";
 
-// <Box
-//   sx={{
-//     backgroundColor: "#F5F5F5",
-//     minHeight: "100vh",
-//     background: "url('/mountain.jpg') no-repeat top center",
-//     backgroundSize: "cover",
-//     width: "100vw",
-//     display: "flex",
-//     alignItems: "center",
-//   }}
-// ></Box>
-
 const Portfolio = () => {
   return (
     <>
@@ -29,7 +17,7 @@ const Portfolio = () => {
           style={{
             backgroundColor: "#F5F5F5",
             minHeight: "100vh",
-            background: "url('/mountain.jpg') no-repeat top center",
+            background: "url('/public/mountain.jpg') no-repeat top center",
             backgroundSize: "cover",
             // position: "absolute",
             top: -40,
@@ -131,6 +119,7 @@ const Portfolio = () => {
                   color: "#222",
                   fontSize: "1.5rem",
                   marginTop: "1rem",
+                  marginLeft: "1rem",
                 }}>
                 Based in <span style={{ color: "#FF6600" }}>Bangalore</span>
               </span>
