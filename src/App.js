@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 
 const Portfolio = () => {
+  const mountainUrl = process.env.PUBLIC_URL + "/mountain.jpg";
+  const yuzuURl = process.env.PUBLIC_URL + "/yuzu.png";
   return (
     <>
       <div>
@@ -17,7 +19,7 @@ const Portfolio = () => {
           style={{
             backgroundColor: "#F5F5F5",
             minHeight: "100vh",
-            background: "url('/public/mountain.jpg') no-repeat top center",
+            background: `url(${mountainUrl}) no-repeat top center`,
             backgroundSize: "cover",
             // position: "absolute",
             top: -40,
@@ -463,7 +465,7 @@ const Portfolio = () => {
                 textAlign: "center",
               }}>
               <img
-                src="/yuzu.png"
+                src={yuzuURl}
                 alt="Yuzu project logo"
                 style={{
                   width: "100%",
