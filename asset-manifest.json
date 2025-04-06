@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rushika-resume/static/css/main.7fa7e7d9.css",
-    "main.js": "/rushika-resume/static/js/main.c402b3fe.js",
-    "static/js/453.95376e7a.chunk.js": "/rushika-resume/static/js/453.95376e7a.chunk.js",
-    "index.html": "/rushika-resume/index.html",
-    "main.7fa7e7d9.css.map": "/rushika-resume/static/css/main.7fa7e7d9.css.map",
-    "main.c402b3fe.js.map": "/rushika-resume/static/js/main.c402b3fe.js.map",
-    "453.95376e7a.chunk.js.map": "/rushika-resume/static/js/453.95376e7a.chunk.js.map"
+    "main.css": "/rushika_esume/static/css/main.7fa7e7d9.css",
+    "main.js": "/rushika_esume/static/js/main.1df73f42.js",
+    "static/js/453.95376e7a.chunk.js": "/rushika_esume/static/js/453.95376e7a.chunk.js",
+    "index.html": "/rushika_esume/index.html",
+    "main.7fa7e7d9.css.map": "/rushika_esume/static/css/main.7fa7e7d9.css.map",
+    "main.1df73f42.js.map": "/rushika_esume/static/js/main.1df73f42.js.map",
+    "453.95376e7a.chunk.js.map": "/rushika_esume/static/js/453.95376e7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fa7e7d9.css",
-    "static/js/main.c402b3fe.js"
+    "static/js/main.1df73f42.js"
   ]
 }
