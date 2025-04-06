@@ -1,21 +1,195 @@
-main {
-  padding-top: 80px; /* Adjust based on your header height */
+/* Profile.css */
+
+.profile-container {
+  position: relative;
+  text-align: left;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  /* padding: 6rem 2rem; */
+  /* margin-left: 5%; */
+
+  /* width: 100px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-body{
-  background-color: aquamarine;
+.profile-content {
+  margin-left: 8%;
+  margin-top: 15%;
 }
 
-div {
-  background-image:url('/mountain.jpg') no-repeat center center/cover;
-  background-size: cover; /* Adjusts image to cover the div */
-  background-position: center; /* Centers the image */
+.profile-heading {
+  font-weight: bold;
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.profile-role {
+  font-style: italic;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.profile-location {
+  font-weight: bold;
+  color: #222;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: block;
+}
+
+.location-highlight {
+  color: #ff6600;
+}
+
+.footer-note {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  text-align: right;
+}
+
+.footer-note-text {
+  color: #666;
+  font-size: 12px;
+}
+
+/* Profile.css */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #e0f7fa 90%, #ffffff 100%);
+  padding: 4%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  gap: 2rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.about-subtitle {
+  color: #999;
+}
+
+.about-quote {
+  font-style: italic;
+  color: #444;
+  margin-top: 1rem;
+  display: block;
+}
+
+.about-paragraph {
+  color: #444;
+  margin-top: 1rem;
+  display: block;
+  line-height: 1.6;
+}
+
+.about-section-heading {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  color: #333;
+}
+
+.about-philosophy {
+  color: #444;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.about-cta {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: block;
+  color: #444;
+}
+.button-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-button {
+  background-color: #ff6600 !important;
+  color: #fff !important;
+  font-weight: bold;
+  text-transform: none !important;
+}
+
+.about-image {
+  flex-shrink: 0;
+  width: 230px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #ddd;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional: Responsive for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    /* align-items: flex-start; */
+  }
+
+  .about-image {
+    width: 200px;
+    height: 260px;
+    margin-top: 1.5rem;
+    align-self: center;
+  }
+  .profile-content {
+    margin-bottom: 155%;
+  }
+}
+
+.about-image-blob {
+  width: 230px;
+  height: 300px;
+  flex-shrink: 0;
+  clip-path: path(
+    "M0.246,0.154 C0.384,0.035,0.631,0.009,0.774,0.107 C0.928,0.214,0.966,0.448,0.93,0.667 C0.894,0.886,0.785,1.089,0.629,1.169 C0.462,1.256,0.254,1.221,0.124,1.069 C-0.016,0.904,-0.021,0.652,0.04,0.437 C0.09,0.262,0.118,0.192,0.246,0.154 Z"
+  );
+  clip-path: ellipse(50% 60% at 50% 50%); /* Fallback if SVG path fails */
+  overflow: hidden;
+  background-color: #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

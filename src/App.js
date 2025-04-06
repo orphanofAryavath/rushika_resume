@@ -8,10 +8,15 @@ import {
   Link,
   Button,
 } from "@mui/material";
+import "./App.css";
 
 const Portfolio = () => {
   const mountainUrl = process.env.PUBLIC_URL + "/mountain.jpg";
   const yuzuURl = process.env.PUBLIC_URL + "/yuzu.png";
+  const profileImage = process.env.PUBLIC_URL + "/profile.jpg";
+  const anna = process.env.PUBLIC_URL + "/anna.png";
+  const stuti = process.env.PUBLIC_URL + "/stuti.png";
+  const resume = process.env.PUBLIC_URL + "/resume.pdf";
   return (
     <>
       <div>
@@ -21,14 +26,13 @@ const Portfolio = () => {
             minHeight: "100vh",
             background: `url(${mountainUrl}) no-repeat top center`,
             backgroundSize: "cover",
-            // position: "absolute",
             top: -40,
             left: 0,
             width: "100vw",
             zIndex: -1,
           }}>
-          {/* Navbar */}
           <AppBar
+            position="static"
             sx={{
               background: "transparent",
               boxShadow: "none",
@@ -38,244 +42,94 @@ const Portfolio = () => {
               padding: 0,
               zIndex: 100,
             }}>
-            <Toolbar
+            {/* <Toolbar
               style={{
                 minHeight: "60px",
                 padding: "0 2rem",
                 display: "flex",
                 justifyContent: "space-between",
+              }}> */}
+            <span
+              style={{
+                fontWeight: "bold",
+                color: "#222",
+                fontSize: "1.25rem",
               }}>
-              <span
-                style={{
-                  fontWeight: "bold",
-                  color: "#222",
-                  fontSize: "1.25rem",
-                }}>
-                Rush.
-              </span>
-              <div>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#666",
-                    margin: "0 1rem",
-                    textDecoration: "none",
-                  }}>
-                  Works
-                </Link>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#666",
-                    margin: "0 1rem",
-                    textDecoration: "none",
-                  }}>
-                  Blog
-                </Link>
-                <Link
-                  href="#"
-                  style={{
-                    color: "#666",
-                    margin: "0 1rem",
-                    textDecoration: "none",
-                  }}>
-                  Contact
-                </Link>
-              </div>
-            </Toolbar>
+              Rush.
+            </span>
+            {/* </Toolbar> */}
           </AppBar>
-
-          {/* Main Content */}
-          <div
-            style={{
-              position: "relative",
-              textAlign: "left",
-              minHeight: "100vh",
-              display: "flex",
-              alignItems: "center",
-              padding: "6rem 2rem",
-              maxWidth: "800px",
-              marginLeft: "5%",
-            }}>
-            <main>
-              <span
-                style={{
-                  fontWeight: "bold",
-                  color: "#222",
-                  fontSize: "2rem",
-                  marginBottom: "0.5rem",
-                }}>
+          <div className="profile-container">
+            <div className="profile-content">
+              <span className="profile-heading">
                 Hi, I'm Rushika, <br />
-                <span
-                  style={{
-                    fontStyle: "italic",
-                    fontWeight: "bold",
-                    color: "#FF6600",
-                  }}>
-                  Business Analyst
-                </span>
+                <span className="profile-role">Business Analyst</span>
               </span>
-              <span
-                style={{
-                  fontWeight: "bold",
-                  color: "#222",
-                  fontSize: "1.5rem",
-                  marginTop: "1rem",
-                  marginLeft: "1rem",
-                }}>
+
+              <span className="profile-location">
                 Based in <span style={{ color: "#FF6600" }}>Bangalore</span>
               </span>
-            </main>
-          </div>
-
-          {/* Side Text */}
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: 10,
-              transform: "rotate(-90deg)",
-              transformOrigin: "left bottom",
-            }}>
-            <span style={{ color: "#666", fontSize: "12px" }}>
-              Made with love by Rushika
-            </span>
+            </div>
           </div>
 
           {/* Bottom Right Text */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: 20,
-              right: 30,
-              textAlign: "right",
-            }}>
-            <span style={{ color: "#666", fontSize: "12px" }}>
+          <div className="footer-note">
+            <span className="footer-note-text">
               Lahul Spiti <br /> May 2024
             </span>
           </div>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padingTop: "6rem",
-          background: "linear-gradient(to bottom, #E0F7FA, #FFFFFF)",
-        }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            backgroundColor: "#fff",
-            padding: "2rem",
-            borderRadius: "12px",
-            boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-            maxWidth: "900px",
-            width: "100%",
-            gap: "2rem",
-            position: "relative",
-          }}>
+      <div className="about-section">
+        <div className="about-container">
           {/* Text Content */}
-          <div style={{ flex: 1 }}>
-            <span
-              style={{
-                fontWeight: "bold",
-                color: "#333",
-                fontSize: "1.75rem",
-              }}>
-              About <span style={{ color: "#999" }}>Me</span>
+          <div className="about-text">
+            <span className="about-title">
+              About <span className="about-subtitle">Me</span>
             </span>
-            <span
-              style={{
-                fontStyle: "italic",
-                color: "#444",
-                marginTop: "1rem",
-                display: "block",
-              }}>
+
+            <span className="about-quote">
               "Innovation is seeing what everybody has seen and thinking what
               nobody has thought."
             </span>
-            <span
-              style={{
-                color: "#444",
-                marginTop: "1rem",
-                display: "block",
-                lineHeight: "1.6",
-              }}>
+
+            <span className="about-paragraph">
               The world’s cultural and technological evolution fascinates me.
               With technology redefining possibilities, I aspire to drive this
               transformation.
             </span>
-            <span
-              style={{
-                color: "#444",
-                marginTop: "1rem",
-                display: "block",
-                lineHeight: "1.6",
-              }}>
+
+            <span className="about-paragraph">
               With a strong foundation in analytics and a passion for
               transforming data into strategy, I thrive on solving business
               challenges through innovation. Guided by intuition and user
               insight, I see data as more than numbers—it’s a story, a vision,
               and a path to better experiences.
             </span>
-            <span
-              style={{
-                fontStyle: "italic",
-                fontWeight: "bold",
-                marginTop: "1rem",
-                display: "block",
-                color: "#333",
-              }}>
-              My Philosophy:
-            </span>
-            <span
-              style={{ color: "#444", marginTop: "0.5rem", display: "block" }}>
+
+            <span className="about-section-heading">My Philosophy:</span>
+
+            <span className="about-philosophy">
               Embrace change, challenge norms, and build products that inspire
               progress.
             </span>
-            <span
-              style={{
-                fontStyle: "italic",
-                fontWeight: "bold",
-                marginTop: "0.5rem",
-                display: "block",
-                color: "#444",
-              }}>
+
+            <span className="about-cta">
               The future isn’t to be awaited—it’s to be created. Let’s build it
               together!
             </span>
-            {/* Button */}
-            <Button
-              variant="contained"
-              style={{
-                marginTop: "1rem",
-                backgroundColor: "#FF6600",
-                color: "#fff",
-                fontWeight: "bold",
-                textTransform: "none",
-              }}>
-              Download Resume
-            </Button>
+            <div className="button-container">
+              <a href={resume} download style={{ textDecoration: "none" }}>
+                <Button variant="contained" className="about-button">
+                  Download Resume
+                </Button>
+              </a>
+            </div>
           </div>
+
           {/* Image */}
-          <div
-            style={{
-              flexShrink: 0,
-              width: "230px",
-              height: "300px",
-              borderRadius: "50%",
-              overflow: "hidden",
-              boxShadow: "0px 4px 12px rgba(0,0,0,0.2)",
-              backgroundColor: "#ddd",
-            }}>
-            <img
-              src="/profile.jpg"
-              alt="Profile"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+          <div className="about-image-blob">
+            <img src={profileImage} alt="Rushika" className="about-image-img" />
           </div>
         </div>
       </div>
@@ -309,7 +163,7 @@ const Portfolio = () => {
             <ul>
               <li>
                 Extracted insights from data on{" "}
-                <strong>200,000+ properties</strong> of $100m+ valuation,
+                <strong>200,000+ properties of $100m+ valuation,</strong>
                 driving key business decisions at AIG.
               </li>
               <li>
@@ -320,8 +174,14 @@ const Portfolio = () => {
               <li>
                 Enhanced <strong>operational efficiency</strong>, improving
                 process quality and reducing turnaround time by{" "}
-                <strong>20%</strong>.
+                <strong>20%</strong>, leveraging advanced analytics to translate
+                complex data into strategic recommendations
               </li>
+              <l1>
+                <strong>Enhanced operational efficiency</strong>, suggesting
+                process improvements that increased quality, reduced turnaround
+                time by 20%, and improved user experience
+              </l1>
               <li>
                 Achieved <strong>244% productivity</strong>, maintaining{" "}
                 <strong>100% quality assurance</strong>.
@@ -352,7 +212,7 @@ const Portfolio = () => {
               <li>
                 Facilitated land acquisition and forest clearance NOCs for the
                 Shimla-Kangra package, verifying and computing critical
-                geospatial and legal data.
+                geospatial and legal data to streamline approvals.
               </li>
             </ul>
           </div>
@@ -390,7 +250,7 @@ const Portfolio = () => {
           justifyContent: "center",
           alignItems: "center",
           padingTop: "6rem",
-          background: "linear-gradient(to bottom, #E0F7FA, #FFFFFF)",
+          background: "linear-gradient(to bottom, #E0F7FA 90%, #FFFFFF 100%)",
         }}>
         <div
           style={{
@@ -441,6 +301,7 @@ const Portfolio = () => {
             maxWidth: "900px",
             width: "100%",
             marginTop: "3rem",
+            marginBottom: "3rem",
             padding: "2rem",
             background: "#fff",
             borderRadius: "12px",
@@ -476,8 +337,11 @@ const Portfolio = () => {
               />
               <h3 style={{ fontWeight: "bold", color: "#333" }}>Yuzu</h3>
               <p style={{ color: "#666" }}>
-                A comprehensive women’s wellness tracker designed to support
-                hormonal health, mental well-being, and holistic remedies.
+                YUZU is a comprehensive women’s wellness tracker designed to
+                support hormonal health, mental well-being, and daily balance
+                through yoga, meditation, Ayurveda, and natural healing,
+                empowers women with personalized insights, guided self-care
+                routines, and holistic remedies.
               </p>
             </div>
             {/* Project 2 */}
@@ -489,7 +353,7 @@ const Portfolio = () => {
                 textAlign: "center",
               }}>
               <img
-                src="/annaprashan.jpg"
+                src={anna}
                 alt="Annaprashan project banner"
                 style={{
                   width: "100%",
@@ -500,8 +364,11 @@ const Portfolio = () => {
               />
               <h3 style={{ fontWeight: "bold", color: "#333" }}>Annaprashan</h3>
               <p style={{ color: "#666" }}>
-                A platform connecting home chefs with consumers, delivering
-                home-made meals while empowering local talent.
+                Annaprashan connects home chefs with consumers, delivering
+                healthy, home-made meals. It empowers local talent, generates
+                employment, and preserves culinary traditions while making
+                nutritious, authentic food easily accessible through a seamless,
+                tech-driven platform.
               </p>
             </div>
             {/* Project 3 */}
@@ -513,7 +380,7 @@ const Portfolio = () => {
                 textAlign: "center",
               }}>
               <img
-                src="/mangalstuti.jpg"
+                src={stuti}
                 alt="Mangal Stuti website preview"
                 style={{
                   width: "100%",
@@ -526,12 +393,14 @@ const Portfolio = () => {
                 Mangal Stuti
               </h3>
               <p style={{ color: "#666" }}>
-                The first integrated online platform for booking and
-                participating in Hindu rituals, poojas, and astrology sessions.
+                Mangal Stuti was the first integrated online platform enabling
+                devotees worldwide to book and participate in live Hindu
+                rituals, poojas, and astrology sessions via video conferencing
+                across renowned Indian temples.
               </p>
             </div>
             {/* Project 4 */}
-            <div
+            {/* <div
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -555,7 +424,7 @@ const Portfolio = () => {
                 A data-driven project optimizing the efficiency and performance
                 of e-rickshaws through analytics.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
